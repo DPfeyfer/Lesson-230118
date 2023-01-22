@@ -24,6 +24,14 @@ public class Main {
 
     public static void Task_2() {
         System.out.println("Task 2");
+        int[] arrays = generateRandomArray();
+        int summa = - 1;
+        for (int i = 0; i < arrays.length; i++) {
+            if (arrays[i] > summa) {
+                summa = arrays[i];
+            }
+        }
+        System.out.println(summa);
         System.out.println();
 
     }
