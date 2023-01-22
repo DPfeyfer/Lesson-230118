@@ -26,18 +26,28 @@ public class Main {
         System.out.println("Task 2");
         int[] arrays = generateRandomArray();
         int summa = - 1;
+        int summa1 = 1000000000;
         for (int i = 0; i < arrays.length; i++) {
             if (arrays[i] > summa) {
                 summa = arrays[i];
             }
         }
-        System.out.println(summa);
+        System.out.println("MAX summa by day is " + summa + " RUB");
+        System.out.println();
+
+        for (int i = 0; i < arrays.length; i++) {
+            if (arrays[i] < summa1) {
+                summa1 = arrays[i];
+            }
+        }
+        System.out.println("MIN summa by day is " + summa1 + " RUB");
         System.out.println();
 
     }
 
     public static void Task_3() {
         System.out.println("Task 3");
+
         System.out.println();
 
     }
