@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) { Task_1(); Task_2(); Task_3(); Task_4();
     }
@@ -59,6 +61,12 @@ public class Main {
 
     public static void Task_4() {
         System.out.println("Task 4");
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        System.out.print("Revers: ");
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
+
         System.out.println();
 
     }
