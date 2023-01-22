@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) { Task_1(); Task_2(); Task_3(); Task_4();
+        Task_4_add();
     }
 
 
@@ -66,7 +67,12 @@ public class Main {
         for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
         }
+        System.out.println();
+        System.out.println();
+    }
 
+    public static void Task_4_add() {
+        System.out.println("Task 4 Add");
         System.out.println();
 
     }
