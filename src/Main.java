@@ -47,7 +47,12 @@ public class Main {
 
     public static void Task_3() {
         System.out.println("Task 3");
-
+        int[] arrays = generateRandomArray();
+        double averageSumma = 0;
+        for (int i = 0; i < arrays.length; i++) {
+            averageSumma += arrays[i] / arrays.length;
+        }
+        System.out.println("Average spend per month is " + averageSumma + " RUB");
         System.out.println();
 
     }
