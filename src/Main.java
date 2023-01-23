@@ -54,9 +54,11 @@ public class Main {
         int[] arrays = generateRandomArray();
         double averageSumma = 0;
         for (int i = 0; i < arrays.length; i++) {
-            averageSumma += arrays[i] / arrays.length;
+            averageSumma += arrays[i];
         }
-        System.out.println("Average spend per month is " + averageSumma + " RUB");
+        averageSumma /= arrays.length;
+        System.out.println("Average spend per month is "
+                + String.format ("%.2f", averageSumma) + " RUB");
         System.out.println();
 
     }
