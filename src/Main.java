@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+
 public class Main {
     public static void main(String[] args) { Task_1(); Task_2(); Task_3(); Task_4();
         Task_4_add();
@@ -28,22 +29,22 @@ public class Main {
     public static void Task_2() {
         System.out.println("Task 2");
         int[] arrays = generateRandomArray();
-        int summa = - 1;
-        int summa1 = 1000000000;
+        int max = 100_000;
+        int min = 200_000;
         for (int i = 0; i < arrays.length; i++) {
-            if (arrays[i] > summa) {
-                summa = arrays[i];
+            if (arrays[i] > max) {
+                max = arrays[i];
             }
         }
-        System.out.println("MAX summa by day is " + summa + " RUB");
+        System.out.println("MAX summa by day is " + max + " RUB");
         System.out.println();
 
         for (int i = 0; i < arrays.length; i++) {
-            if (arrays[i] < summa1) {
-                summa1 = arrays[i];
+            if (arrays[i] < min) {
+                min = arrays[i];
             }
         }
-        System.out.println("MIN summa by day is " + summa1 + " RUB");
+        System.out.println("MIN summa by day is " + min + " RUB");
         System.out.println();
 
     }
@@ -73,6 +74,8 @@ public class Main {
 
     public static void Task_4_add() {
         System.out.println("Task 4 Add");
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        System.out.println(Arrays.toString(reverseFullName));
         System.out.println();
 
     }
